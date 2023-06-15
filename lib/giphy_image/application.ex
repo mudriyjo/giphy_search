@@ -8,6 +8,7 @@ defmodule GiphyImage.Application do
   @impl true
   def start(_type, _args) do
     children = [
+      {Finch, name: MyFinch}
       # Starts a worker by calling: GiphyImage.Worker.start_link(arg)
       # {GiphyImage.Worker, arg}
     ]
